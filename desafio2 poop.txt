@@ -1,0 +1,143 @@
+clase banco:
+respuesta 1)	
+	Objetos:
+		Tangibles:
+			-dinero(contabilidad)
+			-empleados
+			-suministros de oficina
+			-telecajeros (aparatos electronicos-moviliario)
+			-cubiculos (muebles-moviliario)
+			-tarjetas de credito
+			-chques
+			-chequeras
+			-paredes
+			-ventanas
+			-bombillos (aparatos electricos-moviliario)
+			-lamparas (aparatos electricos-moviliario)
+			-sillas (muebles-mobiliario)
+
+		intangibles:
+			-sistemas operativos
+			-logo
+			-computadoras (aparatos electronicos)
+			-personal
+			-credito (contabilidad) 
+			-logo
+			-servicios (respuesta 3) datos bancarios)
+			-base de datos
+			
+			
+respuesta 2)		
+	Atributos:
+		-(contabilidad) estado financiero del banco,[respuesta 4) coleccion:cuentas contables] dato=real
+		-cantidad de ventanas dato=entero
+		-cantidad de cubiculos dato=entero
+		- ubicación de la sede del banco(respuesta3) datos bancarios) dato=alfanumerico-cadena
+		-cantidad de sucursales (respuesta3) datos bancarios) dato=entero
+		cantidad de muebles dato:entero
+		-Reglas del banco(respuesta3) datos bancarios) dato:alfanumerico-caracter
+		-fecha de fundacion (respuesta3) datos bancarios) dato:entero
+		-cantidad de personal dato:entero
+		-telefono dato=entero (respuesta3) datos bancarios)
+		-correo electronico respuesta (respuesta3 datos bancarios) dato=alfanumerico
+		
+
+respuesta3)	
+clase datos bancarios:
+
+	atributos
+
+		-fecha de fundacion dato=entero
+		-ubicación de la sede del banco. dato=alfanumerico-cadena
+		-cantidad de sucursales	dato=entero	
+
+	objetos
+		intangibles
+		-telefono:entero
+		-correo electronico=alfanumerico
+		-servicios
+		--reglas del banco dato=alfanumerico-caracter
+
+respuesta 4)
+clase contabilidad:
+	aributo
+	-estado financiero del banco dato=real
+	
+	objetos
+		tangibles:
+		-	dinero	 
+	
+		intangibles:
+		-credito
+		
+	coleccion: cuentas contables 
+			
+		coleccion de:-activos 
+		coleccion de:-pasivos 
+		coleccion de:-capital 
+		coleccion de:-ingresos 
+		coleccion de:-egresos 
+		
+		 
+		
+
+
+respuesta 5)
+super-clase moviliario (muebles+aparatos electronicos:
+	Atributos:
+		-larga duracion dato=logico
+		-cantidad de piezas dato=entero
+		- tornillos dato=logico
+		-resistencia al agua (falso o verdadero) dato=logico
+	metodos:
+		-guardan objetos
+		-se transportan
+		-se fijan
+
+clase muebles, hereda de:moviliario
+	atributos:
+	-larga duracion=logico
+	-resistencia al agua:verdadero dato=logico
+	-cantidad de piezas dato=entero
+	- atornillado dato=logico
+	-fijación dato=logico
+	metodos:
+	-guardan cobjetos tangibles
+	-se  transportan
+	-se  fijan.
+
+clase aparatos electricos, hereda de moviliario:
+	atributos:
+		-cantidad de piezas dato=entero
+		- electricidad dato=logico
+		-resistencia al agua:falso dato=logico
+		-larga duracion =logico
+		- cableado dato=logico
+		- atornillado dato=logico
+		-fijación dato=logico
+	
+	metodos:
+		-irradia luz dato=logico
+		-se apagan si electricidad es:falso
+		-guardan objetos tangibles
+		-se transportan
+		-se fijan
+
+sub-clase aparatos electronicos hereda de:aparatos electricos
+	atributos
+		-cantidad de piezas dato=entero
+		-electricidad dato=logico
+		-resistencia al agua dato=logico
+		-larga duración dato=logico
+		-cableado dato=logico
+		-atornillado dato=logico
+		-sistema operativo dato=logico
+	metodos:
+	-guardan objetos tangibles
+	-guardan objetos intangibles
+	-se transportan
+	-se fijan
+	-se conectan con la base de datos
+
+
+

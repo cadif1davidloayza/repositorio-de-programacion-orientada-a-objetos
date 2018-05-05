@@ -1,0 +1,74 @@
+universidad
+objetos tangibles:
+las mesas o pupitres.
+los pizarrones
+los profesores
+los estudiantes
+las computadoras
+los urinales y las pocetas.
+suministros de oficina (lapiceros, lapices, marcadores, engrapadoras, etc)
+productos de limpieza
+
+
+objetos intangibles:
+la universidad en si
+los sistemas computacionales de la universidad.
+las reglas de la universidad
+las notas de los alumnos.
+las materias de la universidad.
+informacion de contacto de la universidad
+el personal.
+las evaluaciónes de la universidad
+estado financiero de la universidad
+
+los pizarrones:
+forma:rectangular o cuadrada
+color: cualquiera (generalmente blanco)
+información contenida: Verdadero o falso
+metodo de apoyo: (colgado en la pared, fijado a la pared, apollado por patas, otros)
+suciedad: Verdadero o falso.
+
+metodos:
+-se puede escribir (lo que modifica el estado informacion contenida)
+-se puede borrar (lo que modifica el estado informacion contenida)
+-pueden desmontarse o descolgarse ( lo que modifica el estado metodo de apollo) 
+-limpiar (cuando el pizarron este sucio se limpia)
+
+
+las evaluaciones de la universidad
+-Dificultad de la evaluacion:(facil, media, dificil, muy dificil, etc)
+tiempo de entrega:(Horas, dias, etc)
+tipo de evaluación:( escrita, informe, oral, analisis, entre otros)
+ponderación:(20%, 30%, 10%, etc. de la nota final)
+presencia de sustitutiva: (verdadero o falso)
+
+metodos:
+-Corregir ( modifica la nota del alumno)
+-Determinar la existencia de sustitutiva (en funcion de la cantidad de alumnos aplasados modificara la presencia de sustitutiva)
+-Determinar el tipo de evaluación (en funcion de el profesor, la materia y los alumnos se determinara el tipo de evaluación)
+
+clases:
+1) personal de la universidad.
+Atributos:
+-se encuentran en la nomina de la universidad
+-tienen preferencia sobre los estudiantes.
+-cumplen horario
+-portan uniforme
+Metodos:
+cobran salario (lo que modifica el estado financiero de la universidad)
+utilizan recursos (lo que modifica la cantidad de consumibles de la universidad)
+ensucian la universidad (lo que modifica el estado suciedad)
+
+
+
+2)Consumibles de la universidad
+Atributos
+-cantidad
+-se consumen
+- se recargan o reemplazan
+-se utilizan en salones de clases
+-son usados por el personal de la universidad
+
+metodos:
+-cambian en estado financiero de la universidad (produciendo salidas de dinero)
+- producen y/o eliminan basura en la universidad (lo que modifica el estado suciedad)
